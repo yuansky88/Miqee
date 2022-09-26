@@ -1,0 +1,84 @@
+.confirm_box_wrapper{position: fixed;top: 0;bottom: 0;left: 0;right: 0;text-align: center;z-index: 2000;}
+.confirm_model {position: fixed;left: 0;top: 0;width: 100%;height: 100%;opacity: .5;background: #000;z-index:2001 ;}
+.confirm_box{display: inline-block; width: 420px;padding-bottom: 10px;vertical-align: middle;
+    background-color: #fff;border-radius: 4px;border: 1px solid #ebeef5;font-size: 18px;box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);text-align: left;
+    overflow: hidden;backface-visibility: hidden; position: absolute; top:30%; left: 50%; transform: translateY(-30%);
+	transform: translateX(-50%);z-index: 2002;}
+.confirm_header{ height: auto; overflow: hidden;display: flex;padding: 15px 15px 10px;justify-items: center;
+    align-items: center;}
+.confirm_header .confirm_title{flex: 1;}
+.confirm_header .confirm_title span{font-size: 18px;color: #20202A;}
+.confirm_header .confirm_close{width: 16px; height: 16px;overflow: hidden; cursor: pointer;}
+.confirm_header .confirm_close i{display: block;width: 16px; height: 16px; background: url('../img/icon/icon_close.png') no-repeat;background-size:100% ;}
+.confirm_content{display: flex;padding: 10px 15px; color: #606266;font-size: 14px;align-items: center;}
+.confirm_content .confirm_icon{width: 25px; height: 25px; overflow: hidden;}
+.confirm_content .confirm_message{ flex: 1;padding-left: 10px;}
+.confirm_content .confirm_icon_warning{ background: url("../img/icon/icon_warning.png") no-repeat; background-size:100% ;}
+.confirm_content .confirm_icon_success{background: url("../img/icon/icon_success.png") no-repeat; background-size:100% ;}
+.confirm_content .confirm_icon_error{background: url("../img/icon/icon_error.png") no-repeat; background-size:100% ;}
+.confirm_btns{text-align: center;padding: 15px 15px;}
+.confirm_btns button{display: inline-block;line-height: 1;white-space: nowrap;cursor: pointer;background: #fff;border: 1px solid #dcdfe6;
+    color: #606266;-webkit-appearance: none;text-align: center;font-size: 14px;
+    box-sizing: border-box;outline: none;margin: 0;transition: .1s;font-weight: 500;-moz-user-select: none;
+    -webkit-user-select: none;-ms-user-select: none; padding: 9px 20px;font-size: 14px;border-radius: 4px;
+}
+.confirm_btns button.btns_default{margin-right: 15px;}
+.confirm_btns button.btns_default:hover{color: #0D53FB; border-color:#0D53FB ;}
+.confirm_btns button.btns_primary{background: #0D53FB; border-color:#0D53FB ;color: #fff;}
+
+
+
+.YiJia_message{ position: fixed; top:30px;left: 50%;height: 42px;line-height: 42px; background: #fff;min-width: 200px;color: #666;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 0 6px rgb(0 0 0 / 4%);z-index:99999999; border-radius: 8px;overflow: hidden;}
+.YiJia_message .YiJia_message_main{display: flex;color: #fff;font-size: 14px; align-items: center;padding: 0px 15px;}
+.YiJia_message .YiJia_bg_success{background: #4AC396;}
+.YiJia_message .YiJia_bg_warning{background: #FF8200;}
+.YiJia_message .YiJia_bg_error{background: #ED7979;}
+.YiJia_message .YiJia_bg_default{background: #0D53FB;}
+.YiJia_message .YiJia_message_icon{width: 20px; height: 20px; overflow: hidden;display: block; background-size:100% ;}
+.YiJia_message .YiJia_message_success{background: url(../img/icon/success.png) no-repeat;}
+.YiJia_message .YiJia_message_warning{background: url(../img/icon/state_remind.png) no-repeat;}
+.YiJia_message .YiJia_message_error{background: url(../img/icon/state_error.png) no-repeat;}
+.YiJia_message .YiJia_message_default{background: url(../img/icon/state_remind.png) no-repeat;}
+.YiJia_message .YiJia_content{flex: 1; padding-left: 11px;};
+.YiJia_message.messageFadeInDown {
+        -webkit-animation-duration: .6s;
+        animation-duration: .6s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both ;-webkit-animation-name:messageFadeInDown;
+        animation-name: messageFadeInDown;
+    }
+    .YiJia_message.messageFadeOutUp {
+        -webkit-animation-duration: .6s;
+        animation-duration: .6s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both; -webkit-animation-name: messageFadeOutUp;
+        animation-name: messageFadeOutUp
+    }
+
+    
+@keyframes messageFadeOutUp {
+    0% {
+        opacity: 1;	
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+
+    }
+}
+
+
+
+@keyframes messageFadeInDown {
+    0% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        -webkit-transform: none;
+        transform: none;
+
+    }
+}
